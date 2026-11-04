@@ -1,0 +1,727 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>فـالـكـون للخدمات البرمجية | برمجة مواقع واستضافات سحابية احترافية</title>
+    <meta name="description" content="فالكون للخدمات البرمجية - منصتك المعتمدة لتطوير وبرمجة مواقع الويب الاحترافية، استضافات سحابية فائقة السرعة NVMe، خوادم FiveM وبوتات ذكية بأعلى معايير الجودة.">
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css?v=5.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+    <!-- Dynamic Island -->
+    <div id="dynamic-island" class="dynamic-island">
+        <img src="avatar.png" alt="Falcon" class="island-avatar">
+        <div class="island-status-dot"></div>
+        <div class="island-text">مرحباً بك في <span>فـالـكـون للخدمات البرمجية</span> ⚡️</div>
+    </div>
+
+    <!-- Floating WhatsApp FAB -->
+    <a href="https://wa.me/218930372714?text=السلام%20عليكم،%20أريد%20الاستفسار%20عن%20خدمات%20فالكون%20البرمجية" target="_blank" class="whatsapp-fab" title="تواصل معنا عبر واتساب">
+        <i class="fa-brands fa-whatsapp"></i>
+    </a>
+
+    <!-- Corporate Navbar -->
+    <nav class="navbar">
+        <div class="container nav-container">
+            <a href="index.html" class="logo">
+                <div class="logo-icon-box">
+                    <i class="fa-solid fa-feather-pointed"></i>
+                </div>
+                <div class="logo-text">فـالـكـون</div>
+                <span class="logo-badge">PRO</span>
+            </a>
+
+            <!-- Desktop Nav Links -->
+            <div class="nav-links">
+                <a href="#services" class="active">الخدمات والأسعار</a>
+                <a href="#portfolio">معرض النماذج</a>
+                <a href="#features">لماذا نحن؟</a>
+                <a href="#reviews">آراء العملاء</a>
+                <a href="#faq">الأسئلة الشائعة</a>
+            </div>
+
+            <!-- Navbar Actions -->
+            <div class="nav-cta">
+                <a href="https://discord.gg/Whbxzw4tNk" target="_blank" class="btn-discord-nav" id="discord-link-nav" title="انضم لسيرفر الديسكورد">
+                    <i class="fa-brands fa-discord"></i>
+                    <span>ديسكورد</span>
+                </a>
+                <a href="https://wa.me/218930372714" target="_blank" class="btn-primary btn-nav-primary">
+                    <i class="fa-brands fa-whatsapp"></i>
+                    <span>اطلب استشارة</span>
+                </a>
+                <!-- Mobile Menu Hamburger Button -->
+                <button class="mobile-menu-btn" id="mobile-menu-btn" aria-label="فتح القائمة">
+                    <i class="fa-solid fa-bars-staggered"></i>
+                </button>
+            </div>
+        </div>
+
+        <!-- Mobile Menu Backdrop Overlay -->
+        <div class="mobile-menu-overlay" id="mobile-menu-overlay"></div>
+
+        <!-- Mobile Drawer Menu -->
+        <div class="mobile-menu" id="mobile-menu">
+            <div class="mobile-menu-header">
+                <div class="logo">
+                    <div class="logo-icon-box">
+                        <i class="fa-solid fa-feather-pointed"></i>
+                    </div>
+                    <div class="logo-text">فـالـكـون</div>
+                    <span class="logo-badge">PRO</span>
+                </div>
+                <button class="mobile-close-btn" id="mobile-close-btn" aria-label="إغلاق القائمة">
+                    <i class="fa-solid fa-xmark"></i>
+                </button>
+            </div>
+            <div class="mobile-nav-links">
+                <a href="#services" class="mobile-nav-link"><i class="fa-solid fa-layer-group"></i> الخدمات والأسعار</a>
+                <a href="#portfolio" class="mobile-nav-link"><i class="fa-solid fa-laptop-code"></i> معرض النماذج</a>
+                <a href="#features" class="mobile-nav-link"><i class="fa-solid fa-shield-halved"></i> لماذا نحن؟</a>
+                <a href="#reviews" class="mobile-nav-link"><i class="fa-solid fa-star"></i> آراء العملاء</a>
+                <a href="#faq" class="mobile-nav-link"><i class="fa-solid fa-circle-question"></i> الأسئلة الشائعة</a>
+            </div>
+            <div class="mobile-menu-actions">
+                <a href="https://discord.gg/Whbxzw4tNk" target="_blank" class="btn-discord-large">
+                    <i class="fa-brands fa-discord"></i>
+                    <span>سيرفر الديسكورد</span>
+                </a>
+                <a href="https://wa.me/218930372714" target="_blank" class="btn-primary" style="width: 100%; justify-content: center;">
+                    <i class="fa-brands fa-whatsapp"></i>
+                    <span>تواصل عبر واتساب</span>
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section (High-Impact Split Layout) -->
+    <header class="hero-section">
+        <div class="container">
+            <div class="hero-grid">
+                
+                <!-- Right Column: Pitch & Actions -->
+                <div class="hero-content">
+                    <div class="hero-pill-badge">
+                        <i class="fa-solid fa-sparkles"></i>
+                        <span>برمجة فالكون غير ⚡</span>
+                    </div>
+
+                    <h1 class="hero-title">
+                        نبني لك موقعاً استثنائياً<br>
+                        <span class="hero-gradient-text">يُلفت الأنظار ويضاعف مبيعاتك</span>
+                    </h1>
+
+                    <p class="hero-subtitle">
+                        شركة <strong>فـالـكـون للخدمات البرمجية</strong> — نجمع بين أرقى تصاميم الويب العالمية وأقوى الاستضافات السحابية فائقة السرعة، لنمنح مشروعك حضوراً رقمياً يليق بك مع حماية كاملة ودعم فني مستمر.
+                    </p>
+
+                    <div class="hero-actions">
+                        <a href="#services" class="btn-primary">
+                            <i class="fa-solid fa-bolt"></i>
+                            <span>ابدأ مشروعك الآن</span>
+                        </a>
+                        <a href="https://wa.me/218930372714?text=مرحباً%20فالكون،%20أريد%20استشارة%20برمجية%20لمشروعي" target="_blank" class="btn-secondary">
+                            <i class="fa-brands fa-whatsapp"></i>
+                            <span>تواصل عبر واتساب</span>
+                        </a>
+                        <a href="https://discord.gg/Whbxzw4tNk" target="_blank" class="btn-discord" id="discord-link-hero">
+                            <i class="fa-brands fa-discord"></i>
+                            <span>سيرفر الديسكورد</span>
+                        </a>
+                    </div>
+
+                    <!-- Client Trust Rating -->
+                    <div class="hero-ratings">
+                        <div class="stars-group">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <div class="ratings-text">
+                            <strong>تقييم 4.9/5</strong> من أكثر من 150 عميل في ليبيا وخارجها
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Left Column: Interactive Live Browser Mockup -->
+                <div class="hero-visual-wrapper">
+                    <div class="browser-mockup">
+                        <div class="browser-header">
+                            <div class="browser-dots">
+                                <span class="b-dot red"></span>
+                                <span class="b-dot yellow"></span>
+                                <span class="b-dot green"></span>
+                            </div>
+                            <div class="browser-address-bar">
+                                <i class="fa-solid fa-lock"></i>
+                                <span>https://falcon-software.ly</span>
+                            </div>
+                        </div>
+
+                        <div class="browser-body">
+                            <img src="hero-dark-3d.jpg" alt="فالكون للخدمات البرمجية - أحدث تصاميم المواقع والحلول السحابية" class="hero-3d-img">
+                        </div>
+                    </div>
+
+                    <!-- Floating Speed Badge -->
+                    <div class="floating-speed-chip">
+                        <div class="chip-icon" style="background: rgba(37, 99, 235, 0.1); color: var(--brand-primary);">
+                            <i class="fa-solid fa-gauge-high"></i>
+                        </div>
+                        <div>
+                            <div class="chip-text">سرعة قياسية: 100/100</div>
+                            <div class="chip-sub">أداء فائق وتصفح خاطف</div>
+                        </div>
+                    </div>
+
+                    <!-- Floating Trust Badge -->
+                    <div class="floating-trust-chip">
+                        <div class="chip-icon">
+                            <i class="fa-solid fa-shield-check"></i>
+                        </div>
+                        <div>
+                            <div class="chip-text">استضافة سحابية معتمدة</div>
+                            <div class="chip-sub">حماية DDoS + شهادة SSL مجاناً</div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </header>
+
+    <!-- Stats Section -->
+    <section class="stats-section">
+        <div class="container">
+            <div class="stats-grid">
+                <div class="stat-card">
+                    <div class="stat-number">+99.99%</div>
+                    <div class="stat-label">ضمان استقرار الخوادم السحابية</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number">+150</div>
+                    <div class="stat-label">موقع ومشروع رقمي ناجح</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number">10 Gbps</div>
+                    <div class="stat-label">سرعة ربط البنية التحتية</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number">100%</div>
+                    <div class="stat-label">التزام تام بجودة الكود والتنفيذ</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services & Pricing Section -->
+    <section id="services" class="section-wrapper">
+        <div class="container">
+            <div class="section-head text-center">
+                <span class="section-tag">باقاتنا وخدماتنا الأساسية</span>
+                <h2 class="section-title">حلول تقنية صممت لنجاح مشروعك</h2>
+                <p class="section-subtitle">اختر الخدمة المناسبة لاحتياجاتك، مع كود نظيف، استضافة سريعة، ودعم فني مخلص لا ينقطع.</p>
+            </div>
+
+            <!-- Pricing Cards Grid -->
+            <div class="cards-grid">
+                
+                <!-- 1. Web Dev (Featured) -->
+                <div class="pro-card featured">
+                    <div class="card-top-bar">
+                        <span class="card-category-pill">برمجة وتصميم</span>
+                        <span class="card-featured-badge"><i class="fa-solid fa-crown"></i> الأكثر طلباً</span>
+                    </div>
+
+                    <div class="card-icon-container">
+                        <i class="fa-solid fa-laptop-code"></i>
+                    </div>
+
+                    <h3 class="card-title">برمجة وتطوير المواقع الاحترافية</h3>
+                    <p class="card-desc">تصميم وتطوير مواقع ويب فاخرة متوافقة بالكامل مع جميع الهواتف، مجهزة بلوحة تحكم ذكية وسهلة لإدارة عملك بكل سلاسة.</p>
+
+                    <ul class="card-features-list">
+                        <li><i class="fa-solid fa-circle-check"></i> تصميم متجاوب وأنيق يعكس فخامة علامتك</li>
+                        <li><i class="fa-solid fa-circle-check"></i> لوحة تحكم ذكية وسهلة لإدارة المحتوى</li>
+                        <li><i class="fa-solid fa-circle-check"></i> تهيئة محركات البحث (SEO) للظهور في Google</li>
+                        <li><i class="fa-solid fa-circle-check"></i> دومين وشهادة أمان SSL مجانية مع تدريب كامل</li>
+                        <li><i class="fa-solid fa-circle-check"></i> دعم فني وصيانة مجانية بعد التسليم</li>
+                    </ul>
+
+                    <div class="card-footer">
+                        <div class="card-price-row">
+                            <span class="card-price-label">السعر التقديري</span>
+                            <div class="card-price-value"><span>بدءاً من</span> 100 <span>دينار</span></div>
+                        </div>
+                        <a href="https://wa.me/218930372714?text=السلام%20عليكم،%20أريد%20طلب%20خدمة%20برمجة%20موقع%20من%20فالكون" target="_blank" class="card-btn card-btn-primary">
+                            <i class="fa-brands fa-whatsapp"></i> اطلب موقعك الآن
+                        </a>
+                    </div>
+                </div>
+
+                <!-- 2. Web Hosting -->
+                <div class="pro-card">
+                    <div class="card-top-bar">
+                        <span class="card-category-pill">استضافة سحابية</span>
+                    </div>
+
+                    <div class="card-icon-container">
+                        <i class="fa-solid fa-cloud-arrow-up"></i>
+                    </div>
+
+                    <h3 class="card-title">استضافة المواقع السحابية (NVMe)</h3>
+                    <p class="card-desc">سيرفرات سحابية فائقة السرعة مبنية على أقراص NVMe ومحمية بجدار ناري ضد الهجمات الإلكترونية لضمان سرعة موقعك.</p>
+
+                    <ul class="card-features-list">
+                        <li><i class="fa-solid fa-circle-check"></i> أقراص تخزين فائقة السرعة NVMe Enterprise SSD</li>
+                        <li><i class="fa-solid fa-circle-check"></i> حماية جدارية ذكية ضد هجمات حجب الخدمة DDoS</li>
+                        <li><i class="fa-solid fa-circle-check"></i> شهادة أمان SSL مجانية مع كل استضافة</li>
+                        <li><i class="fa-solid fa-circle-check"></i> نسخ احتياطي دوري لضمان أمان بياناتك</li>
+                        <li><i class="fa-solid fa-circle-check"></i> استقرار مستمر بنسبة 99.99% بدون انقطاع</li>
+                    </ul>
+
+                    <div class="card-footer">
+                        <div class="card-price-row">
+                            <span class="card-price-label">السعر</span>
+                            <div class="card-price-value"><span>تبدأ من</span> 50 <span>دينار</span></div>
+                        </div>
+                        <a href="https://wa.me/218930372714?text=السلام%20عليكم،%20أريد%20الاستفسار%20عن%20استضافات%20المواقع%20(تبدأ%20من%2050%20دينار)%20من%20فالكون" target="_blank" class="card-btn card-btn-outline">
+                            <i class="fa-brands fa-whatsapp"></i> احجز الاستضافة الآن
+                        </a>
+                    </div>
+                </div>
+
+                <!-- 3. Smart Bots -->
+                <div class="pro-card">
+                    <div class="card-top-bar">
+                        <span class="card-category-pill">أتمتة وبرمجة</span>
+                    </div>
+
+                    <div class="card-icon-container">
+                        <i class="fa-solid fa-robot"></i>
+                    </div>
+
+                    <h3 class="card-title">برمجة البوتات الذكية والأتمتة</h3>
+                    <p class="card-desc">تطوير وبرمجة بوتات مخصصة لديسكورد وتيليجرام لأتمتة المهام اليومية، وإدارة السيرفرات والقنوات والرد التلقائي.</p>
+
+                    <ul class="card-features-list">
+                        <li><i class="fa-solid fa-circle-check"></i> بوتات إدارة وحماية وترفيه متقدمة لديسكورد</li>
+                        <li><i class="fa-solid fa-circle-check"></i> بوتات نشر محتوى وإدارة مشتركي قنوات تيليجرام</li>
+                        <li><i class="fa-solid fa-circle-check"></i> ربط البوتات بقواعد بيانات واستضافة سريعة 24/7</li>
+                        <li><i class="fa-solid fa-circle-check"></i> لوحة تحكم وتعديلات مستمرة وضمان تشغيل</li>
+                    </ul>
+
+                    <div class="card-footer">
+                        <div class="card-price-row">
+                            <span class="card-price-label">السعر</span>
+                            <div class="card-price-value"><span>بدءاً من</span> 50 <span>دينار</span></div>
+                        </div>
+                        <a href="https://wa.me/218930372714?text=السلام%20عليكم،%20أريد%20برمجة%20بوت%20خاص%20بي%20من%20فالكون" target="_blank" class="card-btn card-btn-outline">
+                            <i class="fa-brands fa-whatsapp"></i> اطلب البوت الآن
+                        </a>
+                    </div>
+                </div>
+
+                <!-- 4. FiveM Dedicated Servers -->
+                <div class="pro-card">
+                    <div class="card-top-bar">
+                        <span class="card-category-pill">سيرفرات سحابية</span>
+                    </div>
+
+                    <div class="card-icon-container">
+                        <i class="fa-solid fa-server"></i>
+                    </div>
+
+                    <h3 class="card-title">خوادم FiveM عالية الأداء</h3>
+                    <p class="card-desc">سيرفرات مخصصة لمجتمع FiveM العربي بأقصى درجات الاستقرار وحماية متقدمة ضد هجمات حجب الخدمة وانعدام اللاج.</p>
+
+                    <ul class="card-features-list">
+                        <li><i class="fa-solid fa-circle-check"></i> معالجات قوية مع تخزين فائق السرعة NVMe</li>
+                        <li><i class="fa-solid fa-circle-check"></i> نظام حماية متخصص ضد DDoS لهجمات FiveM</li>
+                        <li><i class="fa-solid fa-circle-check"></i> تحكم كامل في السيرفر وصلاحيات الـ Root</li>
+                        <li><i class="fa-solid fa-circle-check"></i> دعم فني مخصص لحل المشاكل التقنية في أي وقت</li>
+                    </ul>
+
+                    <div class="card-footer">
+                        <div class="card-price-row">
+                            <span class="card-price-label">السعر</span>
+                            <div class="card-price-value"><span>تبدأ من</span> 15 <span>دولار</span></div>
+                        </div>
+                        <a href="https://wa.me/218930372714?text=السلام%20عليكم،%20أريد%20طلب%20سيرفر%20FiveM%20(يبدأ%20من%2015%20دولار)%20من%20فالكون" target="_blank" class="card-btn card-btn-outline">
+                            <i class="fa-brands fa-whatsapp"></i> احجز السيرفر الآن
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Section (نماذج الأعمال) -->
+    <section id="portfolio" class="section-wrapper">
+        <div class="container">
+            <div class="section-head text-center">
+                <span class="section-tag">معرض أعمالنا</span>
+                <h2 class="section-title">نماذج من حلول ومواقع قمنا ببرمجتها</h2>
+                <p class="section-subtitle">شاهد جودة التصميم والبرمجة وسرعة الأداء التي نوفرها لعملائنا في مختلف المجالات.</p>
+            </div>
+
+            <div class="portfolio-grid">
+                
+                <!-- Sample 1: E-commerce -->
+                <div class="portfolio-card">
+                    <div class="portfolio-thumb">
+                        <img src="portfolio-ecommerce-dark.jpg" alt="برمجة متجر إلكتروني متكامل" class="portfolio-img">
+                        <span class="portfolio-badge">متجر إلكتروني</span>
+                    </div>
+                    <div class="portfolio-body">
+                        <h3>متجر إلكتروني متكامل للبيع المباشر</h3>
+                        <p>تصميم متجاوب بالكامل وسريع التحميل، مجهز بربط بوابات الدفع المحلية والواتساب ولوحة تحكم عربية سهلة لإدارة المنتجات والمخزون.</p>
+                        <div class="portfolio-tags">
+                            <span class="portfolio-tag-item"><i class="fa-solid fa-cart-shopping"></i> تجارة إلكترونية</span>
+                            <span class="portfolio-tag-item"><i class="fa-solid fa-shield-halved"></i> دفع آمن</span>
+                            <span class="portfolio-tag-item"><i class="fa-solid fa-mobile-screen"></i> متوافق 100%</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Sample 2: Corporate Business -->
+                <div class="portfolio-card">
+                    <div class="portfolio-thumb">
+                        <img src="portfolio-corporate-dark.jpg" alt="برمجة موقع تعريفي للشركات" class="portfolio-img">
+                        <span class="portfolio-badge">موقع تعريفي</span>
+                    </div>
+                    <div class="portfolio-body">
+                        <h3>موقع تعريفي فاخر لشركة أعمال وخدمات</h3>
+                        <p>واجهة عصرية تعزز الثقة لدى العملاء والشركاء التجاريين، مصممة بأعلى معايير الـ SEO لتتصدر نتائج البحث في Google.</p>
+                        <div class="portfolio-tags">
+                            <span class="portfolio-tag-item"><i class="fa-solid fa-briefcase"></i> مواقع شركات</span>
+                            <span class="portfolio-tag-item"><i class="fa-solid fa-magnifying-glass"></i> تهيئة SEO</span>
+                            <span class="portfolio-tag-item"><i class="fa-solid fa-gauge-high"></i> سرعة قصوى</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Sample 3: FiveM Server Portal -->
+                <div class="portfolio-card">
+                    <div class="portfolio-thumb">
+                        <img src="portfolio-fivem.jpg" alt="خوادم وبنية FiveM وبوتات ديسكورد" class="portfolio-img">
+                        <span class="portfolio-badge">سيرفر وبوت</span>
+                    </div>
+                    <div class="portfolio-body">
+                        <h3>بنية متكاملة لخوادم FiveM وبوتات الألعاب</h3>
+                        <p>استضافة خادم متطورة بأقراص NVMe فائقة السرعة، مع بوت ديسكورد إداري ذكي لتسجيل اللاعبين وإدارة الرتب والرول بلاي تلقائياً.</p>
+                        <div class="portfolio-tags">
+                            <span class="portfolio-tag-item"><i class="fa-brands fa-discord"></i> تكامل ديسكورد</span>
+                            <span class="portfolio-tag-item"><i class="fa-solid fa-shield-virus"></i> حماية هجمات</span>
+                            <span class="portfolio-tag-item"><i class="fa-solid fa-server"></i> سيرفر FiveM</span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Discord Community Highlight Section -->
+    <section class="discord-community-section">
+        <div class="container">
+            <div class="discord-banner-card">
+                <div class="discord-banner-content">
+                    <span class="discord-badge"><i class="fa-brands fa-discord"></i> مجتمع فالكون البرمجي</span>
+                    <h2>انضم إلى سيرفر الديسكورد الرسمي ⚡</h2>
+                    <p>تواصل مباشرة مع فريق التطوير، احصل على مساعدة تقنية فورية، وتعرف على آخر تحديثات المشاريع وسيرفرات FiveM وعروض البرمجة الحصرية.</p>
+                    <div class="discord-features">
+                        <span><i class="fa-solid fa-circle-check"></i> دعم فني وتذاكر مساعدة فورية عبر الديسكورد</span>
+                        <span><i class="fa-solid fa-circle-check"></i> شروحات وأكواد حصرية للمطورين وأصحاب المواقع</span>
+                        <span><i class="fa-solid fa-circle-check"></i> مجتمع نشط 24/7 لتبادل الخبرات والاستشارات</span>
+                    </div>
+                    <div class="discord-actions">
+                        <a href="https://discord.gg/Whbxzw4tNk" target="_blank" class="btn-discord-large" id="discord-link-banner">
+                            <i class="fa-brands fa-discord"></i>
+                            <span>دخول سيرفر الديسكورد الآن</span>
+                        </a>
+                    </div>
+                </div>
+                <div class="discord-banner-visual">
+                    <div class="discord-mockup-card">
+                        <div class="discord-header-mini">
+                            <i class="fa-brands fa-discord" style="color: #5865F2; font-size: 1.8rem;"></i>
+                            <div>
+                                <div style="font-weight: 800; font-size: 1rem; color: #0f172a;">سيرفر فـالـكـون الرسمي</div>
+                                <div style="font-size: 0.78rem; color: #10b981; font-weight: 700;">🟢 متصل الآن &bull; مجتمع حي</div>
+                            </div>
+                        </div>
+                        <div class="discord-channels-mini">
+                            <div class="channel-item active"><i class="fa-solid fa-bullhorn"></i> 📢-الإعلانات-والتحديثات</div>
+                            <div class="channel-item"><i class="fa-solid fa-code"></i> 💻-طلبات-البرمجة-والمواقع</div>
+                            <div class="channel-item"><i class="fa-solid fa-gamepad"></i> 🎮-سيرفرات-fivem</div>
+                            <div class="channel-item"><i class="fa-solid fa-ticket"></i> 🎫-فتح-تذكرة-دعم-فني</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Choose Falcon (ركائز التميز) -->
+    <section id="features" class="section-wrapper">
+        <div class="container">
+            <div class="section-head text-center">
+                <span class="section-tag">معايير الاحترافية</span>
+                <h2 class="section-title">لماذا تختار فالكون لشراكتك التقنية؟</h2>
+                <p class="section-subtitle">نضع بين يديك خبرة متكاملة في هندسة الويب وإدارة الخوادم، لنضمن نجاح مشروعك الرقمي.</p>
+            </div>
+
+            <div class="pillars-grid">
+                
+                <div class="pillar-card">
+                    <div class="pillar-icon-box">
+                        <i class="fa-solid fa-gauge-high"></i>
+                    </div>
+                    <h3>سرعة قياسية وأداء خفيف</h3>
+                    <p>نكتب كوداً برمجياً خالياً من الحشو الزائد ونستضيف موقعك على أقراص NVMe فائقة السرعة، ليفتح في لمح البصر.</p>
+                </div>
+
+                <div class="pillar-card">
+                    <div class="pillar-icon-box">
+                        <i class="fa-solid fa-shield-halved"></i>
+                    </div>
+                    <h3>أمان وحماية وتشفير 99.9%</h3>
+                    <p>جدار حماية ذكي ضد الهجمات الإلكترونية وهجمات الـ DDoS، مع شهادة أمان SSL ونسخ احتياطي دوري لبياناتك.</p>
+                </div>
+
+                <div class="pillar-card">
+                    <div class="pillar-icon-box">
+                        <i class="fa-solid fa-mobile-screen-button"></i>
+                    </div>
+                    <h3>تصميم متجاوب 100%</h3>
+                    <p>يظهر موقعك بمظهر جذاب ومنظم على شاشات الهواتف بجميع أنواعها، بالإضافة للأجهزة اللوحية والحواسيب المكتبية.</p>
+                </div>
+
+                <div class="pillar-card">
+                    <div class="pillar-icon-box">
+                        <i class="fa-solid fa-headset"></i>
+                    </div>
+                    <h3>دعم فني واستجابة فورية 24/7</h3>
+                    <p>فريقنا التقني متواجد معك دائماً للإجابة عن استفساراتك، حل أي مشكلة، وتقديم الاستشارات الفنية عبر الواتساب مباشرة.</p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Customer Reviews Section -->
+    <section id="reviews" class="section-wrapper">
+        <div class="container">
+            <div class="section-head text-center">
+                <span class="section-tag">شهادات نعتز بها</span>
+                <h2 class="section-title">ماذا يقول عملاؤنا عن خدماتنا؟</h2>
+                <p class="section-subtitle">ثقة عملائنا هي رأس مالنا الحقيقي، وهذه عينة من تجاربهم مع فالكون للخدمات البرمجية.</p>
+            </div>
+
+            <div class="testimonials-grid">
+                
+                <div class="testimonial-card">
+                    <div class="testimonial-header">
+                        <div class="t-avatar">ع</div>
+                        <div>
+                            <div class="t-name">علي الورفلي <span style="font-size:0.75rem; color:#10b981; font-weight:700;"><i class="fa-solid fa-circle-check"></i> موثق</span></div>
+                            <div class="t-role">صاحب متجر إلكتروني &bull; طرابلس</div>
+                        </div>
+                    </div>
+                    <div class="testimonial-stars">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <p class="testimonial-text">
+                        "أفضل تعامل شفته للأمانة، برمجوا لي المتجر في وقت قياسي وربطوا لي الدفع ولوحة التحكم سهلة جداً. أنصح بالتعامل معهم وبشدة."
+                    </p>
+                </div>
+
+                <div class="testimonial-card">
+                    <div class="testimonial-header">
+                        <div class="t-avatar" style="background: linear-gradient(135deg, #10b981, #0ea5e9);">م</div>
+                        <div>
+                            <div class="t-name">محمد الساعدي <span style="font-size:0.75rem; color:#10b981; font-weight:700;"><i class="fa-solid fa-circle-check"></i> موثق</span></div>
+                            <div class="t-role">مالك سيرفر FiveM &bull; بنغازي</div>
+                        </div>
+                    </div>
+                    <div class="testimonial-stars">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <p class="testimonial-text">
+                        "سيرفر FiveM ثابت وما فيش لاج حتى وقت الزحمة، والدعم الفني يرد في دقائق عبر الواتساب. استضافة محترمة وشغل نظيف."
+                    </p>
+                </div>
+
+                <div class="testimonial-card">
+                    <div class="testimonial-header">
+                        <div class="t-avatar" style="background: linear-gradient(135deg, #00f2fe, #3b82f6);">ع</div>
+                        <div>
+                            <div class="t-name">عبدالرحمن الزاوي <span style="font-size:0.75rem; color:#10b981; font-weight:700;"><i class="fa-solid fa-circle-check"></i> موثق</span></div>
+                            <div class="t-role">رائد أعمال ومؤسس منصة &bull; الزاوية</div>
+                        </div>
+                    </div>
+                    <div class="testimonial-stars">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <p class="testimonial-text">
+                        "تعامل راقي وشغل عالي المستوى، سرعة استجابة الموقع وتجربة الاستخدام على الهاتف ممتازة جداً، والدعم الفني متواجد في أي وقت. أنصح بهم بشدة."
+                    </p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section (الأسئلة الشائعة) -->
+    <section id="faq" class="section-wrapper">
+        <div class="container">
+            <div class="section-head text-center">
+                <span class="section-tag">إجابات واضحة</span>
+                <h2 class="section-title">الأسئلة الشائعة</h2>
+                <p class="section-subtitle">إليك إجابات سريعة على أبرز التساؤلات التي يطرحها عملاؤنا قبل البدء.</p>
+            </div>
+
+            <div class="faq-container">
+                
+                <div class="faq-item active">
+                    <div class="faq-question">
+                        <span>كم يستغرق وقت برمجة وتجهيز الموقع؟</span>
+                        <i class="fa-solid fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        يستغرق العمل في العادة من <strong>3 إلى 7 أيام عمل</strong> حسب حجم المتطلبات وعدد الصفحات، ونبدأ بالتنفيذ فور استلام تفاصيل المشروع وتأكيد الطلب.
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span>هل تشمل الاستضافة شهادة أمان SSL ودعم فني؟</span>
+                        <i class="fa-solid fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        نعم بكل تأكيد، جميع خطط الاستضافة لدينا تشمل <strong>شهادة SSL مجانية 100%</strong>، حماية DDoS متطورة، ودعم فني مخصص لحل أي مشكلة تقنية قد تواجهك.
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span>ما هي وسائل وطرق الدفع المقبولة لديكم؟</span>
+                        <i class="fa-solid fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        نوفر وسائل دفع متعددة لتسهيل التعامل: <strong>ليبيانا، مصرفي بلس، ناب موبايل، Apple Pay، Mastercard، وUSDT كربتو</strong>.
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span>هل سأحصل على تدريب لإدارة الموقع وتعديل المنتجات بنفسي؟</span>
+                        <i class="fa-solid fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        نعم، نسلمك لوحة تحكم ذكية باللغة العربية مع فيديو توضيحي وشرح كامل لكيفية إضافة المنتجات والمحتوى وتغيير الأسعار بنفسك بكل سهولة وبدون الحاجة لخبرة برمجية.
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Payment Methods Section -->
+    <section id="payments" class="section-wrapper" style="padding-top: 1rem;">
+        <div class="container">
+            <div class="payments-card">
+                <div class="payments-info">
+                    <h2>طرق دفع مريحة وآمنة</h2>
+                    <p>نوفر لك وسائل دفع محلية ودولية موثوقة تلبي كافة احتياجاتك وتضمن سرعة إتمام وتفعيل طلبك.</p>
+                </div>
+                <div class="payments-logos-grid">
+                    <div class="pay-badge" title="ليبيانا">
+                        <img src="libyana1.png" alt="ليبيانا">
+                    </div>
+                    <div class="pay-badge" title="مصرفي بلس">
+                        <img src="unnamed.webp" alt="مصرفي بلس">
+                    </div>
+                    <div class="pay-badge" title="ناب موبايل">
+                        <img src="unnamed (1).webp" alt="ناب موبايل">
+                    </div>
+                    <div class="pay-badge" title="Apple Pay">
+                        <i class="fa-brands fa-apple-pay"></i>
+                    </div>
+                    <div class="pay-badge" title="Mastercard">
+                        <img src="mastercard.svg" alt="Mastercard">
+                    </div>
+                    <div class="pay-badge" title="USDT كربتو">
+                        <img src="usdt.png" alt="USDT">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Corporate Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <a href="index.html" class="logo" style="margin-bottom: 1rem;">
+                        <div class="logo-icon-box">
+                            <i class="fa-solid fa-feather-pointed"></i>
+                        </div>
+                        <div class="logo-text">فـالـكـون للخدمات البرمجية</div>
+                    </a>
+                    <p>شريكك المعتمد لتطوير وبرمجة مواقع الويب الحديثة، إدارة الاستضافات السحابية السريعة، وتوفير خوادم وحلول رقمية موثوقة في ليبيا والعالم العربي.</p>
+                </div>
+
+                <div class="footer-column">
+                    <h3>روابط سريعة</h3>
+                    <ul>
+                        <li><a href="#services">الخدمات والأسعار</a></li>
+                        <li><a href="#portfolio">معرض النماذج</a></li>
+                        <li><a href="#features">لماذا تختارنا؟</a></li>
+                        <li><a href="https://discord.gg/Whbxzw4tNk" target="_blank" id="discord-link-footer" style="color: #7289da; font-weight: 700;"><i class="fa-brands fa-discord"></i> سيرفر الديسكورد</a></li>
+                        <li><a href="#reviews">آراء العملاء</a></li>
+                        <li><a href="#faq">الأسئلة الشائعة</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-column">
+                    <h3>السياسات والشروط</h3>
+                    <ul>
+                        <li><a href="terms.html">شروط الاستخدام</a></li>
+                        <li><a href="terms.html">سياسة الخصوصية</a></li>
+                        <li><a href="terms.html">سياسة الاسترجاع والضمان</a></li>
+                        <li><a href="https://wa.me/218930372714" target="_blank">طلب دعم مباشر عبر واتساب</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <div>&copy; 2026 فـالـكـون للخدمات البرمجية. جميع الحقوق محفوظة.</div>
+                <div>بنية رقمية فاخرة وفق أحدث معايير الويب العالمية 🚀</div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
